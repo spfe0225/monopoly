@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monopoly of Trust - PM Hwang</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Noto+Sans+KR:wght@300;400;700&display=swap');
+        
+        :root {
+            --bg-dark: #050505;
+            --accent-gold: #C5A059;
+            --text-main: #E5E7EB;
+        }
+
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+            background-color: var(--bg-dark);
+            color: var(--text-main);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        .section-slide {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 5rem 10%;
+            border-bottom: 1px solid #1a1a1a;
+        }
+
+        .gold-text { color: var(--accent-gold); }
+        .border-gold { border-color: var(--accent-gold); }
+        
+        .manifesto-text {
+            font-size: 1.15rem;
+            word-break: keep-all;
+        }
+
+        .card-dark {
+            background: #0f0f0f;
+            border: 1px solid #222;
+            padding: 2.5rem;
+            transition: all 0.3s ease;
+        }
+
+        .card-dark:hover {
+            border-color: var(--accent-gold);
+            background: #151515;
+            transform: translateY(-5px);
+        }
+
+        .btn-monopoly {
+            display: inline-block;
+            padding: 1.2rem 3rem;
+            border: 2px solid var(--accent-gold);
+            font-size: 1.25rem;
+            font-weight: 700;
+            letter-spacing: 0.2em;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .btn-monopoly:hover {
+            background: var(--accent-gold);
+            color: black;
+        }
+
+        @media (max-width: 768px) {
+            .section-slide { padding: 3rem 5%; }
+            .text-6xl { font-size: 2.5rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Slide 1: Cover -->
+    <section class="section-slide items-start">
+        <p class="gold-text tracking-[0.3em] mb-4 font-bold">GLOBAL STANDARD ASSET MANAGEMENT</p>
+        <h1 class="text-6xl md:text-8xl font-bold leading-tight mb-8">
+            신뢰의 <span class="gold-text">독점</span><br>
+            ZERO TO ONE
+        </h1>
+        <div class="w-32 h-1 bg-gold border-gold border-b-2 mb-12"></div>
+        <div class="text-xl opacity-60 max-w-2xl mb-12">
+            "자본주의의 가치는 희소성에서 나옵니다. <br>남들이 회피하는 '책임'을 지는 것, 그것이 제 독점의 시작입니다."
+        </div>
+        <div>
+            <p class="text-sm uppercase tracking-widest opacity-40">Portfolio Manager</p>
+            <p class="text-2xl font-bold">황 인 철 (In-Chul Hwang)</p>
+        </div>
+    </section>
+
+    <!-- Slide 2: The Letter (Manifesto) -->
+    <section class="section-slide bg-[#080808]">
+        <div class="max-w-4xl manifesto-text">
+            <h2 class="text-3xl font-bold mb-12">“고객의 수익이 곧 나의 수익”</h2>
+            
+            <div class="space-y-8 opacity-90">
+                <p>많은 회사가 이 슬로건을 내걸었지만, 실제로 지키는 곳은 드뭅니다. 그동안 한국 리테일 시장은 고객 계좌의 성패보다 '거래 수수료'를 얼마나 더 뽑아내는지에만 집중해 왔기 때문입니다.</p>
+                
+                <p>하지만 시대가 변했습니다. 전 세계 주식시장이 활발해지고 투자자의 수준은 전문가를 위협할 정도로 높아졌습니다. 이제 글로벌 기업들은 이미 <strong>성과 공유형 모델</strong>로 전환했습니다. 저 역시 단순한 ‘중개자’가 아닌 <strong>‘운용역’</strong>이 되어, 결과로 증명하는 PB가 되려 합니다.</p>
+
+                <div class="py-6 border-y border-white/10 my-10">
+                    <p class="gold-text font-bold mb-2">SKIN IN THE GAME (나심 탈렙)</p>
+                    <p class="text-xl italic font-bold">“책임지지 않는 사람들이 세상을 망치고 있다. 그 행위로 인해 피해를 보지 않는 사람들의 의견은 듣지 말라.”</p>
+                    <p class="mt-4 text-sm opacity-60">저는 제 가족의 계좌를 전부 직접 관리합니다. 가족에게 사줄 수 없는 것은 고객에게도 팔지 않습니다.</p>
+                </div>
+
+                <p>성과가 나야 보상을 받고, 회사는 제가 낸 수익에서 수수료를 취합니다. 이해관계가 완벽히 일치하기에 ‘수익을 내는 노력’ 외에 다른 노이즈는 없습니다. <strong>고객은 손실을 보는데 돈만 벌어가는 직원은 이제 사라져야 합니다.</strong></p>
+
+                <div class="py-6 border-b border-white/10 mb-10">
+                    <p class="gold-text font-bold mb-2">ZERO TO ONE (피터 틸)</p>
+                    <p class="text-xl font-bold">“경쟁하지 말고 독점하라.”</p>
+                    <p class="mt-4">진짜로 'Skin in the Game'을 실천하는 PB는 20%도 안 됩니다. 빨리 성과 내서 은퇴하거나 본사로 가기 위한 징검다리로 여기기 때문입니다. 저는 이 길을 평생의 업으로 택함으로써, 이 <strong>'신뢰의 시장'을 독점</strong>하려 합니다.</p>
+                </div>
+            </div>
+
+            <div class="mt-12 text-sm opacity-40">
+                2025. 12. 31 <br>
+                Wrap Account Wide Release <br>
+                <strong>Portfolio Manager 황인철 올림</strong>
+            </div>
+        </div>
+    </section>
+
+    <!-- Slide 3: Philosophy & Logic -->
+    <section class="section-slide">
+        <h2 class="text-4xl font-bold mb-16">운용 철학: <span class="gold-text">Monopoly Strategy</span></h2>
+        
+        <div class="grid md:grid-cols-3 gap-8 mb-12">
+            <div class="card-dark">
+                <h3 class="text-xl font-bold mb-6 gold-text">01. Structural Shortage</h3>
+                <p class="opacity-70">수요가 공급을 압도하여 필연적으로 가격이 폭발하는 '구조적 결핍' 산업의 길목을 선점합니다.</p>
+            </div>
+            <div class="card-dark">
+                <h3 class="text-xl font-bold mb-6 gold-text">02. Technological Monopoly</h3>
+                <p class="opacity-70">단순한 유행이 아닌, 압도적인 기술적 해자로 시장을 독점할 수 있는 1등 주도주만 담습니다.</p>
+            </div>
+            <div class="card-dark">
+                <h3 class="text-xl font-bold mb-6 gold-text">03. Conviction Holding</h3>
+                <p class="opacity-70">시장의 소음이 아닌 '투자 포인트'에 집중합니다. 매수 근거가 깨지기 전까지 시대의 과실을 온전히 누립니다.</p>
+            </div>
+        </div>
+
+        <div class="p-8 bg-white/5 rounded-lg border border-white/10">
+            <h4 class="font-bold mb-4">“내가 쓰지 않는 것은 쓰레기다” (DOGE Principle)</h4>
+            <p class="opacity-60 text-sm">얼리어답터로서 직접 사용하고 검증한 것만 포트폴리오에 편입합니다. 사용자 관점에서 기술의 확장성을 꿰뚫어 봅니다.</p>
+        </div>
+    </section>
+
+    <!-- Slide 4: Risk Protocol -->
+    <section class="section-slide bg-[#080808]">
+        <h2 class="text-4xl font-bold mb-16">Risk Protocol: <span class="gold-text">Survival</span></h2>
+        
+        <div class="grid md:grid-cols-2 gap-12">
+            <div>
+                <h3 class="text-2xl font-bold mb-8">MDD -20% SHUTDOWN</h3>
+                <div class="p-8 border-l-4 border-red-600 bg-red-600/5">
+                    <p class="text-lg opacity-80 mb-4">계좌 전체 수익률이 -20%에 도달할 경우, 즉시 모든 운용을 중단합니다.</p>
+                    <p class="text-sm opacity-60">수익보다 보존이 우선입니다. 자산가에게 가장 치명적인 '회복 불가능한 손실'을 막기 위해 물리적 셧다운(Shutdown) 원칙을 고수합니다.</p>
+                </div>
+            </div>
+            <div>
+                <h3 class="text-2xl font-bold mb-8">SCENARIO SCALING</h3>
+                <div class="space-y-4">
+                    <div class="flex justify-between p-4 border border-white/10 bg-white/5">
+                        <span>하락 시 (Bottom)</span>
+                        <span class="gold-text font-bold">5 : 2 : 2 : 1</span>
+                    </div>
+                    <div class="flex justify-between p-4 border border-white/10 bg-white/5">
+                        <span>상승 시 (Top)</span>
+                        <span class="gold-text font-bold">2 : 2 : 4 : 2</span>
+                    </div>
+                    <p class="text-xs opacity-40 mt-4 text-right">* 예측하지 않고, 설계된 경로에 따라 기계적으로 대응합니다.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Slide 5: Result & Closing -->
+    <section class="section-slide items-center text-center">
+        <p class="gold-text text-xl mb-6 tracking-widest uppercase">"Losers say nothing. Only Results."</p>
+        <h2 class="text-5xl md:text-7xl font-bold mb-12">결과로만 말하겠습니다.</h2>
+        
+        <div class="max-w-xl opacity-60 mb-16 text-lg">
+            남들이 수수료를 위해 경쟁할 때, 저는 고객님과 함께 신뢰의 시장을 독점하겠습니다. 시대의 성장을 온전히 소유하십시오.
+        </div>
+
+        <div class="btn-monopoly" onclick="alert('상담 신청이 접수되었습니다.')">
+            PARTNERSHIP START
+        </div>
+        
+        <div class="mt-24 opacity-20 text-xs uppercase tracking-[0.5em]">
+            Shinhan Securities | PM In-Chul Hwang
+        </div>
+    </section>
+
+</body>
+</html>
